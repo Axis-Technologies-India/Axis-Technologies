@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-sec
+{
+    @apply text-[1rem] text-primaryColor font-semibold tracking-wide;
+}
+.text-head
+{
+    @apply sm:text-[3.3rem] text-[9.7vw] font-extrabold tracking-wide sm:leading-[3.8rem] leading-[10vw] text-nowrap;
+}
+.text-desc
+{
+    @apply text-[0.6rem] sm:text-[0.8rem] text-gray-500;
+}
+.text-sec-head
+{
+    @apply text-[1.2rem] font-extrabold;
+}
+
+

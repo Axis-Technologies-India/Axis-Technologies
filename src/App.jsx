@@ -1,6 +1,9 @@
+import AboutUs from "./Sections/AboutUs"
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <AboutUs/>
+    </div>
   )
 }
 

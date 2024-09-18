@@ -1,12 +1,14 @@
-import AboutUs from "./Sections/AboutUs"
-import Services from "./Sections/Services"
+import { Outlet } from "react-router-dom"
+
+import Navbar from "./Sections/Landing/Navbar"
 
 const App = () => {
   return (
-    <div>
-      <AboutUs/>
-      <Services/>
-    </div>
+    <>
+      <Navbar/>
+      <Outlet/>
+      {/* <Home/> */}
+    </>
   )
 }
 

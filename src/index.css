@@ -37,3 +37,23 @@
     color: #F77613; 
 }
 
+/* custom flex simple  */
+.custom-flex {
+    @apply flex items-center 
+}
+.custom-flex-center {
+    @apply flex items-center justify-center
+}
+
+.custom-flex-between {
+    @apply flex items-center justify-between
+}
+
+/* on;y large screen */
+.custom-lg-flex-between {
+    @apply lg:flex lg:items-center lg:justify-between
+}
+
+.custom-button{
+    @apply bg-primaryColor text-white p-4
+}

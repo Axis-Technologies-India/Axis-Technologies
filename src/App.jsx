@@ -5,7 +5,7 @@ import Navbar from "./Sections/Landing/Navbar"
 const App = () => {
   return (
     <>
-      <Navbar/>
+      {/*<Navbar/>*/}
       <Outlet/>
       {/* <Home/> */}
     </>

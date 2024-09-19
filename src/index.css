@@ -49,7 +49,7 @@
     @apply flex items-center justify-between
 }
 
-/* on;y large screen */
+/* only large screen */
 .custom-lg-flex-between {
     @apply lg:flex lg:items-center lg:justify-between
 }

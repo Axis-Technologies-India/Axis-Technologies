@@ -13,7 +13,8 @@ export default {
         // 'custom-image5': "url('https://www.silmax.it/wp-content/uploads/Utensili-speciali.jpg')",
       },
       colors:{
-        primaryColor:'#F77613'
+        primaryColor:'#F77613',
+        secondaryColor:'#20212D'
       }
     },
   },

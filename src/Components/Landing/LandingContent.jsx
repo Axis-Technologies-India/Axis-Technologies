@@ -1,13 +1,15 @@
 import { LiaGreaterThanSolid } from "react-icons/lia";
 
 const LandingContent = () => {
+
   const content = ['We are the industry solution to grow']
-  const buttonContent = ['Discover More ', 'Contact Us']
+  const buttonContent = ['Discover More ', 'Contact Us']  
+  
   return (
-    <div className="lg:w-[70vw] h-[80vh] m-auto lg:mt-[20vh] text-white grid lg:grid-cols-2 grid-rows-none place-items-center">
-      <div className="flex flex-col gap-6 p-4 ">
+    <div className="lg:w-[70dvw] h-[80dvh] m-auto lg:mt-[20vh] text-white grid lg:grid-cols-2 grid-rows-none place-items-center ">
+      <div className="flex flex-col gap-8 p-4 ">
         <h1 className="text-head capitalize">{content[0]}</h1>
-        <h1 className="text-[3.2vw] lg:text-[1vw] text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, consectetur unde praesentium aspernatur fuga saepe.</h1>
+        <h1 className="text-[3.5vw] lg:text-[1vw] text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, consectetur unde praesentium aspernatur fuga saepe.</h1>
         <div className="custom-flex gap-8 w-full">
           {
             buttonContent.map((item, index)=>{
@@ -24,7 +26,7 @@ const LandingContent = () => {
           {/* <button className='custom-button text-[.8rem]'></button> */}
         </div>
       </div>
-      <div>
+      <div className="hidden lg:block">
 
       </div>
     </div>

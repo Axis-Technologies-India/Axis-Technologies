@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import LandingContent from "./LandingContent";
-import Navbar from "./Navbar";
+import LandingContent from "../Components/Landing/LandingContent";
 
 const Landing = () => {
   
@@ -23,7 +22,7 @@ const Landing = () => {
 
 
   return (
-    <div className={`w-[100vw] h-[100vh] bg-custom-image1 bg-center bg-cover overflow-hidden overflow-y-hidden`}>
+    <div className={`w-[100dvw] lg:h-[100dvh] bg-custom-image1 bg-center bg-cover overflow-hidden overflow-y-hidden relative`}>
       <LandingContent />
       <div className="w-full h-full absolute z-0 bg-gradient-to-t from-primaryColor  via-transparent to-transparent bottom-0 opacity-30"></div>
     </div>

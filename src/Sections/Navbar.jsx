@@ -1,19 +1,39 @@
-import logo from '../../Assets/logo.png'
+import { Link } from 'react-router-dom';
+import logo from '../Assets/logo.png'
 import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
 
-  const nav = ['Home', 'About Us', 'Products', 'Services', 'Contact Us']
+  const nav = [
+    {
+      'id' : 'Home',
+      'link' :'/'
+    },
+    {
+      'id' : 'About Us',
+      'link' :'/aboutus'
+    },{
+      'id' : 'Products',
+      'link' :'/products'
+    },{
+      'id' : 'Services',
+      'link' :'/services'
+    },{
+      'id' : 'Contactus',
+      'link' :'/contactus'
+    },
+  ]
+
   return (
-    <div className='absolute top-0 w-[100vw]'>
-      <div className="custom-flex-between lg:w-[70vw] lg:text-[1vw] font-medium m-auto  p-6 mt-4 text-white">
+    <div className='hidden lg:absolute top-0 z-20 w-[100vw]'>
+      <div className="flex items-center justify-between  lg:w-[70vw] lg:text-[1vw] font-medium m-auto  p-6 mt-4 text-white">
         <img className='w-[12vw]' src={logo} alt="logo"></img>
 
-        <div className="custom-flex-between gap-10">
-          <ul className="custom-flex-between gap-8">
+        <div className="flex items-center justify-between gap-10">
+          <ul className="flex items-center justify-between gap-8">
             {
               nav.map((navItem, index) => {
-                return <li key={index}>{navItem}</li>
+                return <Link to={navItem.link}><li key={index}>{navItem.id}</li></Link>
               })
             }
           </ul>

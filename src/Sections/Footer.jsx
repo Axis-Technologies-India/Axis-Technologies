@@ -7,7 +7,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 const Footer = () => {
     return <footer className="bg-secondaryColor py-[5rem]">
         <div className="lg:w-[70%] w-[90%] mx-auto gap-[2rem] flex lg:flex-row flex-col-reverse items-center lg:justify-between lg:items-start">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 my-4">
                 <p className="text-desc">We Leverage Cutting Edge Technologies</p>
                 <div className="flex">
                     <input type="text" placeholder="Email Address" className="px-[0.9rem] w-[80%] py-[0.8rem] text-[0.8rem]"></input>

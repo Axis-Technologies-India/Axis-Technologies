@@ -30,6 +30,9 @@ const Process = () => {
     return (
         <div className='lg:w-[70%] mx-auto my-[5vh] lg:my-[20vh] grid grid-cols-1 lg:grid-cols-2 grid-rows-none place-items-center gap-[5vh] p-4 lg:gap-4'>
             <div className='flex flex-col items-center justify-center gap-6'>
+            <div className='w-full lg:hidden text-center lg:text-left text-sec text-primaryColor uppercase'>
+                    Process and Skills
+                </div>
                 {
                     content?.map((items, index) => {
                         return (
@@ -40,8 +43,8 @@ const Process = () => {
                                     </div>
                                 </div>
                                 <div className='flex flex-col items-start justify-center gap-1 '>
-                                    <h1 className='text-[4vw] lg:text-[1.5vw] font-bold'> {items?.title} </h1>
-                                    <h2 className='text-[3vw] lg:text-[.8vw] text-gray-500'>{items?.content}</h2>
+                                    <h1 className='text-sec-head font-bold'> {items?.title} </h1>
+                                    <h2 className='text-desc text-gray-500'>{items?.content}</h2>
                                 </div>
                             </div>
                         )
@@ -50,13 +53,13 @@ const Process = () => {
             </div>
 
             <div className='flex flex-col items-start justify-center gap-8'>
-                <div className='w-full text-center lg:text-left text-sec text-primaryColor capitalize'>
+                <div className='w-full hidden lg:block text-center lg:text-left text-sec text-primaryColor uppercase'>
                     Process and Skills
                 </div>
                 <div className='text-head capitalize'>
                     few reasons why you choose us
                 </div>
-                <h2 className='text-[3vw] lg:text-[.8vw] text-gray-500'>{content[0]?.content}</h2>
+                <h2 className='text-desc text-gray-500'>{content[0]?.content}</h2>
 
                 <div className='w-full grid grid-cols-1 lg:grid-cols-2 grid-rows-none gap-8 lg:gap-4'>
 

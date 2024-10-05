@@ -22,9 +22,9 @@ const Landing = () => {
 
 
   return (
-    <div className={`w-[100dvw] lg:h-[100dvh] bg-custom-image1 bg-center bg-cover overflow-hidden overflow-y-hidden relative`}>
+    <div className={`w-[100dvw] h-[100dvh] lg:h-[100dvh] bg-custom-image1 bg-center bg-cover overflow-hidden overflow-y-hidden relative flex flex-col items-center justify-center`}>
       <LandingContent />
-      <div className="w-full h-full absolute z-0 bg-gradient-to-t from-primaryColor  via-transparent to-transparent bottom-0 opacity-30"></div>
+      <div className="w-full h-full absolute z-10 bg-gradient-to-t from-primaryColor  via-transparent to-transparent bottom-0 opacity-30"></div>
     </div>
   )
 }

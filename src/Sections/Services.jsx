@@ -63,7 +63,7 @@ const Services = () => {
           }
         ]
       };
-    return <div className=" mx-auto bg-gray-100 flex flex-col pt-[3rem] ">
+    return <div className=" mx-auto bg-gray-100 flex flex-col py-[3rem] ">
         <div className="sm:w-[80%] w-[80%] lg:w-[80%] xl:w-[70%] mx-auto flex flex-col gap-[1.3rem]">
             <p className="text-sec text-center mt-8">WHAT WE PROVIDE</p>
             <p className="text-head text-center">Wide Range Of Our Services</p>
@@ -76,7 +76,7 @@ const Services = () => {
             </Slider>
             </div>
         </div>
-        <div className="relative z-[1] top-[5rem] bg-[url('https://images.pexels.com/photos/280014/pexels-photo-280014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] w-[70%] mx-auto min-h-[10rem] hidden lg:flex flex-row justify-between items-center px-[3rem] py-[2rem] bg-cover bg-center">
+        <div className="relative z-[1] top-[7rem] bg-[url('https://images.pexels.com/photos/280014/pexels-photo-280014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] w-[70%] mx-auto min-h-[10rem] hidden lg:flex flex-row justify-between items-center px-[3rem] py-[2rem] bg-cover bg-center">
             <div>
                 <p className="text-sec">JOIN NOW</p>
                 <p className="text-[2.5rem] font-bold text-white tracking-wider leading-10">Join The future of <br></br>Industry now</p>

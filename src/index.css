@@ -13,7 +13,7 @@
 }
 .text-desc
 {
-    @apply text-[0.6rem] sm:text-[0.8rem] text-gray-500;
+    @apply text-[1rem] sm:text-[0.8rem] text-gray-500;
 }
 .text-sec-head
 {

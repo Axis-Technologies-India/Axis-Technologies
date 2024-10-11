@@ -1,11 +1,16 @@
-const AboutDescription = () =>{
-    return <div className="flex flex-col lg:w-[50%] w-[100%] gap-[1.3rem]">
+import { IoMdConstruct } from "react-icons/io";
+import { IoIosPeople } from "react-icons/io";
+
+const AboutDescription = () => {
+    return <div className="flex flex-col lg:w-[50%] w-[100%] gap-[1.3rem] text-justify">
         <p className="text-sec">ABOUT US</p>
         <p className="text-head text-nowrap">We Rennovate New <br></br>Innovation</p>
         <p className="text-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos beatae doloribus, velit obcaecati quam saepe deserunt ullam adipisci numquam deleniti laboriosam. Nobis!</p>
         <div className="flex flex-col gap-5">
             <div className="flex gap-4 items-center justify-start">
-                <div className="bg-white min-w-[4rem] min-h-[4rem] rounded-[50%] shadow-lg"></div>
+                <div className="bg-primaryColor min-w-[4rem] min-h-[4rem] rounded-[50%] shadow-lg flex items-center justify-center">
+                    <IoMdConstruct className="text-white min-w-[2rem] min-h-[2rem]" />
+                </div>
                 <div className="flex flex-col">
                     <p className="text-sec-head">Expert Engineer</p>
                     <p className="text-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sint.</p>
@@ -13,7 +18,9 @@ const AboutDescription = () =>{
             </div>
 
             <div className="flex gap-4 items-center justify-start">
-                <div className="bg-white min-w-[4rem] min-h-[4rem] rounded-[50%] shadow-lg"></div>
+                <div className="bg-primaryColor min-w-[4rem] min-h-[4rem] rounded-[50%] shadow-lg flex items-center justify-center">
+                    <IoIosPeople className="text-white min-w-[3rem] min-h-[3rem]" />
+                </div>
                 <div className="flex flex-col">
                     <p className="text-sec-head">Certified Engineer</p>
                     <p className="text-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sint.</p>

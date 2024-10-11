@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <>
 
-      <div className='hidden lg:flex absolute top-0 z-20 w-[100vw]'>
+      <div className='hidden lg:flex absolute top-0 z-40 w-[100vw]'>
         <div className="flex items-center justify-between  lg:w-[70vw] lg:text-[1vw] font-medium m-auto  p-6 mt-4 text-white">
           <img className='w-[12vw]' src={logo} alt="logo"></img>
 
@@ -91,7 +91,7 @@ const Navbar = () => {
                   </span>
                   <button className='custom-button text-[0.9rem] font-semibold'>Get a Quota</button>
                 </div>
-
+                <div className="absolute opacity-[0.15] z-[20] left-[0] blur-[10px] w-[15rem] h-[15rem] rounded-t-[50%] rounded-br-[50%] bg-gradient-to-tr from-primaryColor"></div>
               </div>
 
             </div>

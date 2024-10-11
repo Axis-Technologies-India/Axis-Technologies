@@ -6,17 +6,20 @@ import Client from '../Sections/Client'
 import React from 'react'
 import Navbar from "../Sections/Navbar"
 import Process from "../Sections/Process"
+import Testimonials from "../Sections/Testimonial"
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Landing />
       <AboutUs />
       <Services />
       <Process />
-      <Faq />
+      {/* Products here */}
+      <Testimonials/>
       <Client />
+      <Faq />
     </div>
   )
 }

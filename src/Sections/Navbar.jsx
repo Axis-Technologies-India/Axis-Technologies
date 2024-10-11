@@ -30,7 +30,7 @@ const Navbar = () => {
       'id': 'Services',
       'link': '/services'
     }, {
-      'id': 'Contactus',
+      'id': 'Contact Us',
       'link': '/contactus'
     },
   ]
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <ul className="w-full  flex flex-col items-end justify-between p-4 gap-8 text-head">
                   {
                     nav.map((navItem, index) => {
-                      return <Link to={navItem.link}><li key={index}>{navItem.id}</li></Link>
+                      return <Link to={navItem.link} onClick={changemenu}><li key={index}>{navItem.id}</li></Link>
                     })
                   }
                 </ul>

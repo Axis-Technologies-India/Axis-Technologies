@@ -4,14 +4,12 @@ import Services from "../Sections/Services"
 import Faq from "../Sections/Faq"
 import Client from '../Sections/Client'
 import React from 'react'
-import Navbar from "../Sections/Navbar"
 import Process from "../Sections/Process"
 import Testimonials from "../Sections/Testimonial"
 
 const Home = () => {
   return (
     <div>
-      {/* <Navbar /> */}
       <Landing />
       <AboutUs />
       <Services />

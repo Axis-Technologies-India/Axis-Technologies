@@ -24,7 +24,7 @@ const LandingContent = () => {
 
 
   return (
-    <div className="lg:w-[70dvw] h-[80dvh] m-auto lg:mt-[20vh] text-black grid lg:grid-cols-2 grid-rows-none place-items-center">
+    <div className="lg:w-[70dvw] h-[80dvh] m-auto lg:mt-[20vh] text-black grid lg:grid-cols-2 grid-rows-none place-items-center z-40">
       <div className="flex flex-col gap-8 p-4 ">
         <h1 className="text-head capitalize">{content[0]}</h1>
         <h1 className="text-[3.5vw] lg:text-[1vw] text-black"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, consectetur unde praesentium aspernatur fuga saepe.</h1>

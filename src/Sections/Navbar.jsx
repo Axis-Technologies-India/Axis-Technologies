@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <>
 
-      <div className='hidden lg:flex absolute top-0 z-40 w-[100vw]'>
+      <div className='hidden lg:flex absolute top-0 z-50 w-[100vw]'>
         <div className="flex items-center justify-between  lg:w-[70vw] lg:text-[1vw] font-medium m-auto  p-6 mt-4 text-black">
           
           <img className='w-[12vw]' src={logo} alt="logo"></img>
@@ -65,7 +65,7 @@ const Navbar = () => {
       </div>
 
 
-      <div className='absolute lg:hidden top-0 z-20 w-[100vw] flex items-center justify-between p-4'>
+      <div className='absolute lg:hidden top-0 z-50 w-[100vw] flex items-center justify-between p-4'>
         <img className='w-[40vw]' src={logo} alt="logo"></img>
         {
           menu ?

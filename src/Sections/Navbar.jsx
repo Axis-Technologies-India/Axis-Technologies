@@ -39,18 +39,19 @@ const Navbar = () => {
     <>
 
       <div className='hidden lg:flex absolute top-0 z-40 w-[100vw]'>
-        <div className="flex items-center justify-between  lg:w-[70vw] lg:text-[1vw] font-medium m-auto  p-6 mt-4 text-white">
+        <div className="flex items-center justify-between  lg:w-[70vw] lg:text-[1vw] font-medium m-auto  p-6 mt-4 text-black">
+          
           <img className='w-[12vw]' src={logo} alt="logo"></img>
 
           <div className="flex items-center justify-between gap-10">
-            <ul className="flex items-center justify-between gap-8">
+            <ul className="flex items-center justify-between gap-8 text-[1rem] font-bold">
               {
                 nav.map((navItem, index) => {
                   return <Link to={navItem.link}><li key={index}>{navItem.id}</li></Link>
                 })
               }
             </ul>
-            <FaSearch className='text-white w-5 h-5' />
+            <FaSearch className='text-black w-5 h-5' />
             <div className="relative z-0">
               <span class="absolute z-10 -top-1 -right-2 flex h-4 w-4">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
@@ -68,7 +69,7 @@ const Navbar = () => {
         <img className='w-[40vw]' src={logo} alt="logo"></img>
         {
           menu ?
-            <div className='w-[100vw] h-[100vh] fixed top-0 right-0 flex flex-col gap-4 bg-black text-white'>
+            <div className='w-[100vw] h-[100vh] fixed top-0 right-0 flex flex-col gap-4 bg-white text-black'>
               <div className='flex items-center justify-between p-8 w-full'>
               <img className='w-[35vw]' src={logo} alt="logo"></img>
 
@@ -79,7 +80,7 @@ const Navbar = () => {
                 <ul className="w-full  flex flex-col items-end justify-between p-4 gap-8 text-head">
                   {
                     nav.map((navItem, index) => {
-                      return <Link to={navItem.link} onClick={changemenu}><li key={index}>{navItem.id}</li></Link>
+                      return <Link to={navItem.link}><li key={index} onClick={changemenu} >{navItem.id}</li></Link>
                     })
                   }
                 </ul>
@@ -96,7 +97,7 @@ const Navbar = () => {
 
             </div>
             :
-            <TiThMenu className='text-white text-[8vw] ' onClick={changemenu} />
+            <TiThMenu className='text-black text-[8vw] ' onClick={changemenu} />
 
         }
 

@@ -28,7 +28,7 @@ const Process = () => {
     ]
 
     return (
-        <div className='lg:w-[70%] mx-auto my-[5vh] lg:my-[20vh] grid grid-cols-1 lg:grid-cols-2 grid-rows-none place-items-center gap-[5vh] p-4 lg:gap-4 text-justify'>
+        <div className='lg:w-[70%] mx-auto my-[5vh] lg:my-[20vh] grid grid-cols-1 lg:grid-cols-2 grid-rows-none place-items-center gap-[5vh] p-4 lg:gap-4 '>
             <div className='flex flex-col items-center justify-center gap-6'>
             <div className='w-full lg:hidden text-center lg:text-left text-sec text-primaryColor uppercase'>
                     Process and Skills
@@ -52,7 +52,7 @@ const Process = () => {
                 }
             </div>
 
-            <div className='flex flex-col items-start justify-center gap-8'>
+            <div className='  w-[90%] flex flex-col items-start justify-center gap-8'>
                 <div className='w-full hidden lg:block text-center lg:text-left text-sec text-primaryColor uppercase'>
                     Process and Skills
                 </div>

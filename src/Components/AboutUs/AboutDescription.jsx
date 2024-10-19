@@ -3,7 +3,7 @@ import { IoIosPeople } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const AboutDescription = () => {
-    return <div className="flex flex-col lg:w-[50%] w-[100%] gap-[1.3rem] text-justify">
+    return <div className="flex flex-col lg:w-[50%] w-[100%] gap-[1.3rem]">
         <p className="text-sec">ABOUT US</p>
         <p className="text-head text-nowrap">We Rennovate New <br></br>Innovation</p>
         <p className="text-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos beatae doloribus, velit obcaecati quam saepe deserunt ullam adipisci numquam deleniti laboriosam. Nobis!</p>

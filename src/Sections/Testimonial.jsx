@@ -63,7 +63,7 @@ const Testimonials = () => {
           }
         ]
       };
-    return <div className=" mx-auto flex flex-col py-[3rem] ">
+    return <div className=" mx-auto flex flex-col  ">
         <div className="sm:w-[80%] w-[80%] lg:w-[80%] xl:w-[70%] mx-auto flex flex-col gap-[1.3rem]">
             <p className="text-sec text-center mt-8 uppercase">Testimonials</p>
             <p className="text-head text-center">What Our Client Say About Us</p>

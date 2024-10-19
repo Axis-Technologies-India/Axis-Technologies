@@ -9,11 +9,11 @@
 }
 .text-head
 {
-    @apply sm:text-[3.3rem] text-[9.7vw] font-extrabold tracking-wide sm:leading-[3.8rem] leading-[10vw] ;
+    @apply sm:text-[3.2rem] text-[9.7vw] font-extrabold tracking-wide sm:leading-[3.8rem] leading-[10vw] ;
 }
 .text-desc
 {
-    @apply text-[1rem] sm:text-[0.8rem] text-gray-500;
+    @apply text-[0.8rem] sm:text-[0.8rem] text-gray-500;
 }
 .text-sec-head
 {

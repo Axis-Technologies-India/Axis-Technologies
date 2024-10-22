@@ -6,6 +6,7 @@ import { ImCross } from "react-icons/im";
 
 import { useState } from 'react';
 import Menu from '../Components/Navbar/Menu';
+import aboutData from "../Utils/AboutData";
 
 const Navbar = () => {
 
@@ -40,9 +41,9 @@ const Navbar = () => {
 
       <div className='hidden lg:flex absolute top-0 z-50 w-[100vw]'>
         <div className="flex items-center justify-between  lg:w-[70vw] lg:text-[1vw] font-medium m-auto  p-6 mt-4 text-black">
-          
-          <img className='w-[12vw]' src={logo} alt="logo"></img>
-
+          <Link to={'/'}>
+          <img className='w-[10rem]' src={logo} alt="logo"></img>
+          </Link>
           <div className="flex items-center justify-between gap-10">
             <ul className="flex items-center justify-between gap-8 text-[1rem] font-bold">
               {
@@ -66,18 +67,17 @@ const Navbar = () => {
 
 
       <div className='absolute lg:hidden top-0 z-50 w-[100vw] flex items-center justify-between p-4'>
-        <img className='w-[40vw]' src={logo} alt="logo"></img>
+        <img className='max-w-[7rem]' src={logo} alt="logo"></img>
         {
           menu ?
             <div className='w-[100vw] h-[100vh] fixed top-0 right-0 flex flex-col gap-4 bg-white text-black'>
               <div className='flex items-center justify-between p-8 w-full'>
-              <img className='w-[35vw]' src={logo} alt="logo"></img>
-
-                <ImCross onClick={changemenu} />
+              <img className='w-[7rem]' src={logo} alt="logo"></img>
+                <ImCross className='text-black text-[1.5rem] ' onClick={changemenu} />
               </div>
 
               <div className='h-full flex flex-col items-end p-8 gap-8'>
-                <ul className="w-full  flex flex-col items-end justify-between p-4 gap-8 text-head">
+                <ul className="w-full  flex flex-col items-end justify-between p-4 gap-8 text-sec-head">
                   {
                     nav.map((navItem, index) => {
                       return <Link to={navItem.link}><li key={index} onClick={changemenu} >{navItem.id}</li></Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
 
             </div>
             :
-            <TiThMenu className='text-black text-[8vw] ' onClick={changemenu} />
+            <TiThMenu className='text-black text-[2rem] ' onClick={changemenu} />
 
         }
 

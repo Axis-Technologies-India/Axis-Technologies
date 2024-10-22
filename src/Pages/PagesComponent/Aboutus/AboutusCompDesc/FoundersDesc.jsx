@@ -1,7 +1,7 @@
 import { FaMailBulk } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 
-const AboutusDesc = ({ aboutdata }) => {
+const FoundersDesc = ({ aboutdata }) => {
     const {name, position, experience, email, phone} = aboutdata;
 
     return (
@@ -37,4 +37,4 @@ const AboutusDesc = ({ aboutdata }) => {
     )
 }
 
-export default AboutusDesc
+export default FoundersDesc

@@ -9,6 +9,7 @@ import Aboutus from './Pages/Aboutus.jsx';
 import Products from './Pages/Products.jsx';
 import Services from './Pages/Services.jsx';
 import Contactus from './Pages/Contactus.jsx';
+import MainProducts from './Pages/MainProducts.jsx';
 
 const appLayout = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const appLayout = createBrowserRouter([
             },
             {
                 path : '/products',
+                element: <MainProducts/>
+            },
+            {
+                path : '/products/:id',
                 element: <Products/>
             },
             {

@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 /* Primary Styling for the website */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 .text-sec
 {
     @apply text-[1rem] text-primaryColor font-bold tracking-wide;

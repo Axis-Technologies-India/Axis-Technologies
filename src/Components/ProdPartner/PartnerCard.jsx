@@ -1,8 +1,22 @@
 import { Link } from "react-router-dom"
 
-const PartnerCard = (props) =>{
-    return <Link className="sm:max-w-[10rem] sm:min-w-[10rem] sm:min-h-[10rem] max-w-[6rem] min-w-[6rem] min-h-[6rem] rounded-[50%] bg-gray-300 flex justify-center items-center" to="/products" state={{id:props.id}}>
-        <img src={props.url} className="min-w-[3rem] max-w-[3rem] sm:max-w-[5rem] sm:min-w-[5rem]"></img>
+const PartnerCard = (props) => {
+    const shadowColor = [
+        'shadow-blue-400',
+        'shadow-yellow-500',
+        'shadow-orange-300',
+        'shadow-yellow-500',
+        'shadow-yellow-500',
+        'shadow-gray-500',
+        'shadow-blue-900',
+        'shadow-orange-500',
+        'shadow-orange-500',
+    ];
+
+    return <Link to="/products/:id" state={{ id: props.id }}>
+        <div className={`min-w-[8rem] min-h-[8rem] lg:min-w-[13rem] lg:min-h-[13rem] flex justify-center items-center bg-contain bg-no-repeat bg-center`} style={ { backgroundImage : `url(${props.url})` } } to="/products/:id" state={{id:props.id}}>
+     </div>
+        {/* <img src={props.url} className={`w-[10rem] shadow-xl ${shadowColor[props.id] || ''}`}></img> */}
     </Link>
 }
 

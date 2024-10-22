@@ -1,5 +1,5 @@
-import AboutusDesc from "./AboutusCompDesc/AboutusDesc";
-import AboutusImage from "./AboutusCompDesc/AboutusImage";
+import FoundersDesc from "./AboutusCompDesc/FoundersDesc";
+import Foundersimg from "./AboutusCompDesc/Foundersimg";
 import aboutData from "../../../Utils/AboutData";
 
 const AboutusComp = () => {
@@ -10,8 +10,8 @@ const AboutusComp = () => {
         aboutData.map((item, id) => {
           return (
             <div key={id} className="lg:w-[70%] sm:w-[80%] w-[90%] my-[1rem] lg:my-[2rem] gap-[2rem] mx-auto flex lg:flex-row flex-col">
-              <AboutusImage />
-              <AboutusDesc aboutdata={item} />
+              <Foundersimg />
+              <FoundersDesc aboutdata={item} />
             </div>
           )
         })

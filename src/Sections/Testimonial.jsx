@@ -63,16 +63,16 @@ const Testimonials = () => {
           }
         ]
       };
-    return <div className=" mx-auto flex flex-col  ">
+    return <div className=" mx-auto flex flex-col py-[1rem]">
         <div className="sm:w-[80%] w-[80%] lg:w-[80%] xl:w-[70%] mx-auto flex flex-col gap-[1.3rem]">
             <p className="text-sec text-center mt-8 uppercase">Testimonials</p>
             <p className="text-head text-center">What Our Client Say About Us</p>
             <div className="py-[2rem]">
             <Slider {...settings}>
-                <TestimonialCard logo={"hlo"} head="Mr. Nakamura" desc="PCD Tools were good and high quality" img={"https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} no={0} />
-                <TestimonialCard logo={"hlo"} head="Mr. Santosh" desc="PCD Tools were good and high quality" img={"https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} no={1} />
-                <TestimonialCard logo={"hlo"} head="Jaidev" desc="PCD Tools were good and high quality" img={"https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} no={2} />
-                <TestimonialCard logo={"hlo"} head="Ratan" desc="PCD Tools were good and high quality" img={"https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} no={3} />
+                <TestimonialCard logo={"hlo"} head="Mr. Nakamura" desc="PCD Tools were good and high quality" img={"https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} no={1} />
+                <TestimonialCard logo={"hlo"} head="Mr. Santosh" desc="PCD Tools were good and high quality" img={"https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} no={2} />
+                <TestimonialCard logo={"hlo"} head="Jaidev" desc="PCD Tools were good and high quality" img={"https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} no={3} />
+                <TestimonialCard logo={"hlo"} head="Ratan" desc="PCD Tools were good and high quality" img={"https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} no={4} />
             </Slider>
             </div>
         </div>

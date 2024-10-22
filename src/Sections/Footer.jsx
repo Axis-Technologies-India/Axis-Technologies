@@ -2,7 +2,9 @@ import { PiArrowFatLineRightThin } from "react-icons/pi";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
+import aboutdata from '../Utils/AboutData'
+import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
     return <footer className="bg-secondaryColor py-[5rem]">
@@ -22,26 +24,26 @@ const Footer = () => {
 
             <div className="flex flex-col gap-1  lg:items-start items-center justify-start">
                 <p className="text-sec-head text-white my-2">Our Links</p>
-                <a href="#" className="text-desc">Home</a>
-                <a href="#" className="text-desc">About Us</a>
-                <a href="#" className="text-desc">Services</a>
-                <a href="#" className="text-desc">Portfolio</a>
-                <a href="#" className="text-desc">Contact Us</a>
+                <Link to={'/'} className="text-desc" >Home</Link>
+                <Link to={'/aboutus'} className="text-desc" >About Us</Link>
+                <Link to={'/services'} className="text-desc" >Services</Link>
+                <Link to={'/products'} className="text-desc" >Products</Link>
+                <Link to={'/contactus'} className="text-desc" >Contact Us</Link>
             </div>
 
             <div className="flex flex-col gap-3 lg:w-[33%] lg:items-start items-center">
                 <p className="text-sec-head text-white my-2">Contact Us</p>
-                <div className="flex flex-row justify-center items-center gap-4">
-                    <div className="bg-primaryColor min-w-[2rem] min-h-[2rem] rounded-[50%]"></div>
-                    <p className="text-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, quibusdam!</p>
-                </div>
-                <div className="flex flex-row justify-center items-center gap-4">
-                    <div className="bg-primaryColor min-w-[2rem] min-h-[2rem] rounded-[50%]"></div>
-                    <p className="text-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, quibusdam!</p>
-                </div>
-                <div className="flex flex-row justify-center items-center gap-4">
-                    <div className="bg-primaryColor min-w-[2rem] min-h-[2rem] rounded-[50%]"></div>
-                    <p className="text-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, quibusdam!</p>
+                <div className="flex flex-col gap-4">
+                    {
+                        aboutdata.map((item, id) => {
+                            return <div className="flex flex-row justify-between items-center gap-4">
+                                <div className="bg-primaryColor flex items-center justify-center min-w-[2rem] min-h-[2rem] rounded-[50%]">
+                                    <MdOutlineEmail />
+                                </div>
+                                <p className="text-desc"><a href={`mailto:${item.email}`}>{item.email}</a></p>
+                            </div>
+                        })
+                    }
                 </div>
             </div>
         </div>

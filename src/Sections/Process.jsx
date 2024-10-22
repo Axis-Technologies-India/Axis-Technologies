@@ -28,7 +28,7 @@ const Process = () => {
     ]
 
     return (
-        <div className='lg:w-[70%] mx-auto my-[5vh] lg:my-[20vh] grid grid-cols-1 lg:grid-cols-2 grid-rows-none place-items-center gap-[5vh] p-4 lg:gap-4 '>
+        <div className='lg:w-[70%] mx-auto my-[5vh] lg:my-[10vh] grid grid-cols-1 lg:grid-cols-2 grid-rows-none place-items-center gap-[5vh] p-4 lg:gap-4 '>
             <div className='flex flex-col items-center justify-center gap-6'>
             <div className='w-full lg:hidden text-center lg:text-left text-sec text-primaryColor uppercase'>
                     Process and Skills
@@ -39,7 +39,7 @@ const Process = () => {
                             <div className='flex items-center justify-center gap-10' key={index}>
                                 <div className='min-w-[4rem] min-h-[4rem] bg-orange-300 rounded-full flex items-center justify-center'>
                                     <div className='min-w-[3rem] min-h-[3rem] bg-primaryColor rounded-full flex items-center justify-center'>
-                                        <h1 className='text-[6vw] lg:text-[1.5vw] text-white font-bold'>{index + 1}</h1>
+                                        <h1 className='text-[1.5rem] lg:text-[1.5vw] text-white font-bold'>{index + 1}</h1>
                                     </div>
                                 </div>
                                 <div className='flex flex-col items-start justify-center gap-1 '>
